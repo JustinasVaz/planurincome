@@ -1,6 +1,6 @@
 # Plan Your Income
 [Live!](http://planurincome.meteor.com/)
-##Single page App created with Meteor.js
+##Meteor js calendar app using fullcalendar
 
 ### Packages:
 
