@@ -1,0 +1,13 @@
+#example{
+    display: block;
+    margin: auto;
+}
+.positive{
+
+}
+.negative{
+    color:red;
+}
+.event{
+    box-shadow: 0 0 1px rgba(34, 25, 25, 0.4);
+}

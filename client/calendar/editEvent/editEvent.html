@@ -1,0 +1,25 @@
+<template name="editEvent">
+    <div id="example" class="modal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">x</a>
+
+            <h3>Edit</h3>
+        </div>
+
+        <div class="modal-body">
+            <label for="title">Title</label><br>
+            <input type="text" name="title" value="{{evt.title}}" id="title">
+        </div>
+
+        <div class="modal-body">
+            <label for="amount">amount</label><br>
+            <input type="text" name="amount" value="{{evt.amount}}" id="amount">
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn btn-danger" id="delete" data-dismiss="modal">Delete</a>
+            <a href="#" class="btn btn-success" id="save">Save</a>
+            <a href="#" class="btn btn-default" id="cancel" data-dismiss="modal">Cancel</a>
+        </div>
+    </div>
+</template>
