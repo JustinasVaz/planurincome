@@ -69,7 +69,7 @@ Template.calendar.rendered = function () {
                 } else {
                     sum = '<span class="negative">' + sum + '</span>';
                 }
-                return '<div class="event">' + event.title + ' ' + sum + '</div>';
+                return '<div class="event">' + event.title + ' - Left with: ' + sum + '</div>';
             },
             editable: true
         });
