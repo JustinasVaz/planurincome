@@ -35,7 +35,6 @@ Router.map(function () {
 ```javascript
 Template.calendar.rendered = function () {
     if (Meteor.userId()) {
-        $('#calendar').fullCalendar('refetchEvents');
         $('#calendar').fullCalendar({
             dayClick: function (date, allDay, jsEvent, view) {
                 Session.set('showAddEvent', true);
@@ -84,13 +83,12 @@ Template.calendar.rendered = function () {
                 } else {
                     sum = '<span class="negative">' + sum + '</span>';
                 }
-                return '<div class="event">' + event.title + ' ' + sum + '</div>';
+                return '<div class="event">' + event.title + ' - Left with: ' + sum + '</div>';
             },
             editable: true
         });
         updateCalendar();
-    }else{
-        alert('Please login.');
+    } else {
         Router.go('home');
     }
 };
