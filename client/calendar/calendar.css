@@ -11,3 +11,14 @@
 .event{
     box-shadow: 0 0 1px rgba(34, 25, 25, 0.4);
 }
+
+.login-link-text{
+    color: #777;
+}
+
+#login-buttons{
+    padding-top: 12px;
+}
+.center{
+    text-align: center;
+}

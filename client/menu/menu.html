@@ -6,14 +6,16 @@
                 <li class="{{isActivePath '/'}}">
                     <a href="/">Home</a>
                 </li>
-                <li class="{{isActivePath '/calendar'}}">
-                    <a href="/calendar">Calendar</a>
-                </li>
-                <li class="{{isActivePath '/history'}}">
-                    <a href="/history">History</a>
-                </li>
+                {{#if User}}
+                    <li class="{{isActivePath '/calendar'}}">
+                        <a href="/calendar">Calendar</a>
+                    </li>
+                    <li class="{{isActivePath '/history'}}">
+                        <a href="/history">History</a>
+                    </li>
+                {{/if}}
                 <li>
-                   {{>loginButtons}}
+                    {{>loginButtons}}
                 </li>
             </ul>
         </div>

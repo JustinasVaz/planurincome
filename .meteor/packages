@@ -8,10 +8,10 @@ meteor-platform
 autopublish
 iron:router
 accounts-password
-accounts-ui
 jquery
 bootstrap
 rajit:bootstrap3-datepicker
 twbs:bootstrap
 mrt:fullcalendar
 zimme:active-route
+accounts-ui

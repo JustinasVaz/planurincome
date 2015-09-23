@@ -1,3 +1,29 @@
 <template name="home">
+    {{#if User}}
+        <div class="container">
+            <h2>Next month:</h2>
+            <table class="table table-condensed">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Cash</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each days}}
+                    <tr>
+                        <td>{{this.day}}</td>
+                        <td>{{this.amount}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    {{else}}
+        <div class="center jumbotron">
+            <h3>Login to begin!</h3>
+            <p>Plan ur income</p>
+        </div>
 
+    {{/if}}
 </template>

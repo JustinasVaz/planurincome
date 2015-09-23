@@ -20,7 +20,6 @@ Template.calendar.helpers({
 Template.calendar.rendered = function () {
 
     if (Meteor.userId()) {
-        $('#calendar').fullCalendar('refetchEvents');
         $('#calendar').fullCalendar({
             dayClick: function (date, allDay, jsEvent, view) {
                 Session.set('showAddEvent', true);
@@ -74,7 +73,7 @@ Template.calendar.rendered = function () {
             editable: true
         });
         updateCalendar();
-    }else{
+    } else {
         alert('Please login.');
         Router.go('home');
     }
