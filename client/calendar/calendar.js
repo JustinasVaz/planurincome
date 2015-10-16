@@ -18,7 +18,6 @@ Template.calendar.helpers({
 });
 
 Template.calendar.rendered = function () {
-
     if (Meteor.userId()) {
         $('#calendar').fullCalendar({
             dayClick: function (date, allDay, jsEvent, view) {
@@ -74,7 +73,6 @@ Template.calendar.rendered = function () {
         });
         updateCalendar();
     } else {
-        alert('Please login.');
         Router.go('home');
     }
 };

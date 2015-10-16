@@ -3,8 +3,8 @@ CalEvents = new Mongo.Collection('calevents');
 
 if(Meteor.isServer){
     Meteor.methods({
-        removeAllEvents: function () {
-            return CalEvents.remove({});
+        removeAllEvents: function (id) {
+            return CalEvents.remove({user: id });
         },
         removeEvent: function (id) {
             return CalEvents.remove(id);
